@@ -1,0 +1,13 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "mementoinabyss:layer2_feature",
+  "config": {
+    "allow_fluids": true,
+    "feature": "mementoinabyss_twilight:raw/simple_well"
+  }
+}

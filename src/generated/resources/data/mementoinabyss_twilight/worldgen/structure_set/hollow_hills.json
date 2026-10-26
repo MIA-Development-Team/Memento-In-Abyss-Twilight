@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 12,
+      "other_set": "mementoinabyss_twilight:lich_tower"
+    },
+    "frequency": 0.25,
+    "salt": 47268129,
+    "separation": 16,
+    "spacing": 32
+  },
+  "structures": [
+    {
+      "structure": "twilightforest:small_hollow_hill",
+      "weight": 3
+    },
+    {
+      "structure": "twilightforest:medium_hollow_hill",
+      "weight": 2
+    },
+    {
+      "structure": "twilightforest:large_hollow_hill",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "twilightforest:troll_vines",
+  "config": {
+    "state": {
+      "Name": "twilightforest:trollvidr"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": "mementoinabyss_twilight:vanilla/huge_brown_mushroom",
+      "placement": []
+    },
+    "feature_true": {
+      "feature": "mementoinabyss_twilight:vanilla/huge_red_mushroom",
+      "placement": []
+    }
+  }
+}

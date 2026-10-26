@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "twilightforest:weighted_list",
+  "config": [
+    {
+      "data": {
+        "feature": "mementoinabyss_twilight:mushroom/canopy_red_vanilla_mushroom",
+        "placement": []
+      },
+      "weight": 33
+    },
+    {
+      "data": {
+        "feature": "mementoinabyss_twilight:mushroom/canopy_red_smooth_mushroom",
+        "placement": []
+      },
+      "weight": 33
+    },
+    {
+      "data": {
+        "feature": "mementoinabyss_twilight:mushroom/canopy_red_spheroid_mushroom",
+        "placement": []
+      },
+      "weight": 33
+    },
+    {
+      "data": {
+        "feature": "mementoinabyss_twilight:mushroom/canopy_red_flat_mushroom",
+        "placement": []
+      },
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.altnoir.mementoinabyss.twilight.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "TwilightDarkTowerMainMixin",
+    "TwilightDarkTowerWingMixin",
+    "TwilightRaisedLandmarkMixin",
+    "TwilightLandmarkLookupMixin",
+    "TwilightMagicMapMixin",
+    "TwilightKnightStrongholdMixin",
+    "TwilightCastleDungeonMixin",
+    "TwilightTemplateGroundMixin",
+    "TwilightMazeMapMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

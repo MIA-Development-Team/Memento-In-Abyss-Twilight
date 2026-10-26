@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mementoinabyss_twilight:dense_forest",
+      "required": false
+    },
+    {
+      "id": "mementoinabyss_twilight:dense_mushroom_forest",
+      "required": false
+    },
+    {
+      "id": "mementoinabyss_twilight:enchanted_forest",
+      "required": false
+    },
+    {
+      "id": "mementoinabyss_twilight:fire_swamp",
+      "required": false
+    },
+    {
+      "id": "mementoinabyss_twilight:firefly_forest",
+      "required": false
+    },
+    {
+      "id": "mementoinabyss_twilight:forest",
+      "required": false
+    },
+    {
+      "id": "mementoinabyss_twilight:mushroom_forest",
+      "required": false
+    }
+  ]
+}

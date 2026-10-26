@@ -1,0 +1,87 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "attributes": {
+    "minecraft:visual/fog_color": "#ffffff",
+    "minecraft:visual/sky_color": "#808080"
+  },
+  "carvers": [],
+  "creature_spawn_probability": 0.05,
+  "downfall": 0.9,
+  "effects": {
+    "foliage_color": "#ffffff",
+    "grass_color": "#ffffff",
+    "water_color": "#3f76e4"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "mementoinabyss_twilight:legacy_coal_ore",
+      "mementoinabyss_twilight:legacy_iron_ore",
+      "mementoinabyss_twilight:legacy_gold_ore",
+      "mementoinabyss_twilight:legacy_redstone_ore",
+      "mementoinabyss_twilight:legacy_diamond_ore",
+      "mementoinabyss_twilight:legacy_lapis_ore",
+      "mementoinabyss_twilight:legacy_copper_ore"
+    ],
+    [
+      "mementoinabyss_twilight:plant_roots",
+      "mementoinabyss_twilight:torch_berries"
+    ],
+    [],
+    [
+      "mementoinabyss_twilight:snowy_blueberry_bushes",
+      "mementoinabyss_twilight:maloberry_bushes",
+      "mementoinabyss_twilight:tree/selector/snowy_forest_trees",
+      "mementoinabyss_twilight:spruce_fallen_log"
+    ],
+    [
+      "mementoinabyss_twilight:snow_under_trees",
+      "mementoinabyss_twilight:vanilla/freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {
+    "twilightforest:winter_wolf": {
+      "charge": 0.6,
+      "energy_budget": 0.15
+    },
+    "twilightforest:yeti": {
+      "charge": 0.6,
+      "energy_budget": 0.15
+    }
+  },
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [
+      {
+        "type": "twilightforest:winter_wolf",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "twilightforest:yeti",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.09
+}

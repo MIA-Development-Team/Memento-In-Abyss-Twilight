@@ -1,0 +1,159 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "attributes": {
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "twilightforest:wandering_firefly"
+        },
+        "probability": 0.00025
+      }
+    ],
+    "minecraft:visual/fog_color": "#c0ffd8",
+    "minecraft:visual/sky_color": "#20224a",
+    "minecraft:visual/water_fog_color": "#050533"
+  },
+  "carvers": [],
+  "creature_spawn_probability": 0.15,
+  "downfall": 1.0,
+  "effects": {
+    "water_color": "#3f76e4"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "mementoinabyss_twilight:druid_hut",
+      "mementoinabyss_twilight:well_placer",
+      "mementoinabyss_twilight:foundation"
+    ],
+    [],
+    [
+      "mementoinabyss_twilight:vanilla/disk_sand",
+      "mementoinabyss_twilight:vanilla/disk_clay",
+      "mementoinabyss_twilight:vanilla/disk_gravel",
+      "mementoinabyss_twilight:wood_roots",
+      "mementoinabyss_twilight:legacy_coal_ore",
+      "mementoinabyss_twilight:legacy_iron_ore",
+      "mementoinabyss_twilight:legacy_gold_ore",
+      "mementoinabyss_twilight:legacy_redstone_ore",
+      "mementoinabyss_twilight:legacy_diamond_ore",
+      "mementoinabyss_twilight:legacy_lapis_ore",
+      "mementoinabyss_twilight:legacy_copper_ore",
+      "mementoinabyss_twilight:small_andesite",
+      "mementoinabyss_twilight:small_diorite",
+      "mementoinabyss_twilight:small_granite"
+    ],
+    [
+      "mementoinabyss_twilight:plant_roots",
+      "mementoinabyss_twilight:torch_berries",
+      "mementoinabyss_twilight:iron_oreberries",
+      "mementoinabyss_twilight:gold_oreberries",
+      "mementoinabyss_twilight:copper_oreberries"
+    ],
+    [],
+    [
+      "mementoinabyss_twilight:vanilla/patch_tall_grass",
+      "mementoinabyss_twilight:patch_grass_badlands",
+      "mementoinabyss_twilight:patch_grass_savanna",
+      "mementoinabyss_twilight:vanilla/patch_sugar_cane",
+      "mementoinabyss_twilight:blackberry_bushes",
+      "mementoinabyss_twilight:patch_grass_jungle",
+      "mementoinabyss_twilight:mayapple",
+      "mementoinabyss_twilight:flower_placer_alt",
+      "mementoinabyss_twilight:grove_ruins",
+      "mementoinabyss_twilight:stone_circle",
+      "mementoinabyss_twilight:outside_stalagmite",
+      "mementoinabyss_twilight:monolith",
+      "mementoinabyss_twilight:hollow_stump",
+      "mementoinabyss_twilight:hollow_log",
+      "mementoinabyss_twilight:tree/selector/firefly_forest_trees",
+      "mementoinabyss_twilight:tree/selector/vanilla_trees",
+      "mementoinabyss_twilight:tree/twilight_oak_tree",
+      "mementoinabyss_twilight:tree/large_twilight_oak_tree",
+      "mementoinabyss_twilight:lamppost_placer",
+      "mementoinabyss_twilight:mushgloom_cluster",
+      "mementoinabyss_twilight:vanilla/patch_pumpkin",
+      "mementoinabyss_twilight:vanilla/flower_forest_flowers",
+      "mementoinabyss_twilight:default_fallen_logs"
+    ],
+    [
+      "mementoinabyss_twilight:vanilla/freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "twilightforest:bighorn_sheep",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 12
+      },
+      {
+        "type": "twilightforest:boar",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:chicken",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "twilightforest:deer",
+        "maxCount": 5,
+        "minCount": 4,
+        "weight": 15
+      },
+      {
+        "type": "minecraft:wolf",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 5
+      },
+      {
+        "type": "twilightforest:tiny_bird",
+        "maxCount": 8,
+        "minCount": 4,
+        "weight": 15
+      },
+      {
+        "type": "twilightforest:squirrel",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 10
+      },
+      {
+        "type": "twilightforest:dwarf_rabbit",
+        "maxCount": 5,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "twilightforest:raven",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 10
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.5
+}

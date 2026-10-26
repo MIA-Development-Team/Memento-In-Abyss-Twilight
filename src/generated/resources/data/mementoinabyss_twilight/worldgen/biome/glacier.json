@@ -1,0 +1,66 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "attributes": {
+    "minecraft:visual/fog_color": "#361f88",
+    "minecraft:visual/sky_color": "#130d28"
+  },
+  "carvers": [],
+  "creature_spawn_probability": 0.15,
+  "downfall": 0.1,
+  "effects": {
+    "foliage_color": "#ffffff",
+    "grass_color": "#ffffff",
+    "water_color": "#3f76e4"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "mementoinabyss_twilight:legacy_coal_ore",
+      "mementoinabyss_twilight:legacy_iron_ore",
+      "mementoinabyss_twilight:legacy_gold_ore",
+      "mementoinabyss_twilight:legacy_redstone_ore",
+      "mementoinabyss_twilight:legacy_diamond_ore",
+      "mementoinabyss_twilight:legacy_lapis_ore",
+      "mementoinabyss_twilight:legacy_copper_ore"
+    ],
+    [
+      "mementoinabyss_twilight:plant_roots",
+      "mementoinabyss_twilight:torch_berries"
+    ],
+    [],
+    [],
+    [
+      "mementoinabyss_twilight:vanilla/freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "twilightforest:penguin",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 10
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.08
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "placement": {
+    "type": "mementoinabyss:layer2_landmark",
+    "primary": false,
+    "salt": 1
+  },
+  "structures": [
+    {
+      "structure": "twilightforest:giant_house",
+      "weight": 1
+    }
+  ]
+}

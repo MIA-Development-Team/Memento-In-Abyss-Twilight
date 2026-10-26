@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": "mementoinabyss_twilight:tree/snowy_spruce_tree",
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.33,
+        "feature": {
+          "feature": "mementoinabyss_twilight:tree/mega_spruce_tree",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.125,
+        "feature": {
+          "feature": "mementoinabyss_twilight:tree/large_winter_tree",
+          "placement": []
+        }
+      }
+    ]
+  }
+}

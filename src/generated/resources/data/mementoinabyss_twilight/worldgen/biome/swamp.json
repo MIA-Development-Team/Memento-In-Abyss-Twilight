@@ -1,0 +1,121 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "attributes": {
+    "minecraft:visual/fog_color": "#003f21",
+    "minecraft:visual/sky_color": "#002112",
+    "minecraft:visual/water_fog_color": "#95b55f",
+    "minecraft:visual/water_fog_end_distance": {
+      "argument": 0.85,
+      "modifier": "multiply"
+    }
+  },
+  "carvers": [],
+  "downfall": 0.9,
+  "effects": {
+    "foliage_color": "#496137",
+    "grass_color": "#5c694e",
+    "grass_color_modifier": "twilightforest:swamp",
+    "water_color": "#95b55f"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "mementoinabyss_twilight:druid_hut",
+      "mementoinabyss_twilight:well_placer",
+      "mementoinabyss_twilight:foundation"
+    ],
+    [],
+    [
+      "mementoinabyss_twilight:vanilla/disk_sand",
+      "mementoinabyss_twilight:vanilla/disk_clay",
+      "mementoinabyss_twilight:vanilla/disk_gravel",
+      "mementoinabyss_twilight:wood_roots",
+      "mementoinabyss_twilight:legacy_coal_ore",
+      "mementoinabyss_twilight:legacy_iron_ore",
+      "mementoinabyss_twilight:legacy_gold_ore",
+      "mementoinabyss_twilight:legacy_redstone_ore",
+      "mementoinabyss_twilight:legacy_diamond_ore",
+      "mementoinabyss_twilight:legacy_lapis_ore",
+      "mementoinabyss_twilight:legacy_copper_ore",
+      "mementoinabyss_twilight:small_andesite",
+      "mementoinabyss_twilight:small_diorite",
+      "mementoinabyss_twilight:small_granite"
+    ],
+    [
+      "mementoinabyss_twilight:plant_roots",
+      "mementoinabyss_twilight:torch_berries"
+    ],
+    [],
+    [
+      "mementoinabyss_twilight:vanilla/patch_tall_grass",
+      "mementoinabyss_twilight:patch_grass_badlands",
+      "mementoinabyss_twilight:patch_grass_savanna",
+      "mementoinabyss_twilight:vanilla/patch_sugar_cane",
+      "mementoinabyss_twilight:swamp_raspberry_bushes",
+      "mementoinabyss_twilight:swamp_blackberry_bushes",
+      "mementoinabyss_twilight:vanilla/patch_grass_taiga_2",
+      "mementoinabyss_twilight:grove_ruins",
+      "mementoinabyss_twilight:stone_circle",
+      "mementoinabyss_twilight:outside_stalagmite",
+      "mementoinabyss_twilight:monolith",
+      "mementoinabyss_twilight:hollow_stump",
+      "mementoinabyss_twilight:hollow_log",
+      "mementoinabyss_twilight:tree/mangrove_tree",
+      "mementoinabyss_twilight:tree/swampy_oak_tree",
+      "mementoinabyss_twilight:tree/oak_bush",
+      "mementoinabyss_twilight:vanilla/patch_sugar_cane_swamp",
+      "mementoinabyss_twilight:vanilla/vines",
+      "mementoinabyss_twilight:vanilla/patch_dead_bush",
+      "mementoinabyss_twilight:mangrove_fallen_log",
+      "mementoinabyss_twilight:huge_lily_pad",
+      "mementoinabyss_twilight:huge_water_lily",
+      "mementoinabyss_twilight:vanilla/patch_waterlily"
+    ],
+    [
+      "mementoinabyss_twilight:vanilla/freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {
+    "minecraft:zombie": {
+      "charge": 0.7,
+      "energy_budget": 0.15
+    },
+    "twilightforest:mosquito_swarm": {
+      "charge": 0.7,
+      "energy_budget": 0.15
+    }
+  },
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:zombie",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
+        "type": "twilightforest:mosquito_swarm",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 10
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.8
+}

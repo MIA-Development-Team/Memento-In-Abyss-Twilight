@@ -1,0 +1,63 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "attributes": {
+    "minecraft:visual/fog_color": "#c0ffd8",
+    "minecraft:visual/sky_color": "#20224a",
+    "minecraft:visual/water_fog_color": "#050533"
+  },
+  "carvers": [],
+  "downfall": 0.1,
+  "effects": {
+    "water_color": "#3f76e4"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "mementoinabyss_twilight:legacy_coal_ore",
+      "mementoinabyss_twilight:legacy_iron_ore",
+      "mementoinabyss_twilight:legacy_gold_ore",
+      "mementoinabyss_twilight:legacy_redstone_ore",
+      "mementoinabyss_twilight:legacy_diamond_ore",
+      "mementoinabyss_twilight:legacy_lapis_ore",
+      "mementoinabyss_twilight:legacy_copper_ore",
+      "mementoinabyss_twilight:small_andesite",
+      "mementoinabyss_twilight:small_diorite",
+      "mementoinabyss_twilight:small_granite"
+    ],
+    [
+      "mementoinabyss_twilight:iron_oreberries",
+      "mementoinabyss_twilight:gold_oreberries",
+      "mementoinabyss_twilight:copper_oreberries"
+    ],
+    [],
+    [
+      "mementoinabyss_twilight:vanilla/seagrass_normal"
+    ],
+    [
+      "mementoinabyss_twilight:vanilla/freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.5
+}

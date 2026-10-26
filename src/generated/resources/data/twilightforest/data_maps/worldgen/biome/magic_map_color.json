@@ -1,0 +1,229 @@
+{
+  "values": {
+    "mementoinabyss_twilight:dark_forest": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 3,
+        "map_color": {
+          "color": 6717235,
+          "id": 27
+        }
+      }
+    },
+    "mementoinabyss_twilight:dark_forest_center": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 3,
+        "map_color": {
+          "color": 14188339,
+          "id": 15
+        }
+      }
+    },
+    "mementoinabyss_twilight:dense_forest": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 0,
+        "map_color": {
+          "color": 31744,
+          "id": 7
+        }
+      }
+    },
+    "mementoinabyss_twilight:dense_mushroom_forest": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 0,
+        "map_color": {
+          "color": 15892389,
+          "id": 20
+        }
+      }
+    },
+    "mementoinabyss_twilight:enchanted_forest": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 2,
+        "map_color": {
+          "color": 5013401,
+          "id": 23
+        }
+      }
+    },
+    "mementoinabyss_twilight:final_plateau": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 2,
+        "map_color": {
+          "color": 10066329,
+          "id": 22
+        }
+      }
+    },
+    "mementoinabyss_twilight:fire_swamp": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 1,
+        "map_color": {
+          "color": 7340544,
+          "id": 35
+        }
+      }
+    },
+    "mementoinabyss_twilight:firefly_forest": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 1,
+        "map_color": {
+          "color": 55610,
+          "id": 33
+        }
+      }
+    },
+    "mementoinabyss_twilight:forest": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 1,
+        "map_color": {
+          "color": 31744,
+          "id": 7
+        }
+      }
+    },
+    "mementoinabyss_twilight:glacier": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 1,
+        "map_color": {
+          "color": 10526975,
+          "id": 5
+        }
+      }
+    },
+    "mementoinabyss_twilight:highlands": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 0,
+        "map_color": {
+          "color": 9923917,
+          "id": 10
+        }
+      }
+    },
+    "mementoinabyss_twilight:mushroom_forest": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 0,
+        "map_color": {
+          "color": 14188339,
+          "id": 15
+        }
+      }
+    },
+    "mementoinabyss_twilight:snowy_forest": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 1,
+        "map_color": {
+          "color": 16777215,
+          "id": 8
+        }
+      }
+    },
+    "mementoinabyss_twilight:stream": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 1,
+        "map_color": {
+          "color": 4210943,
+          "id": 12
+        }
+      }
+    },
+    "mementoinabyss_twilight:swamp": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 3,
+        "map_color": {
+          "color": 6085589,
+          "id": 31
+        }
+      }
+    }
+  }
+}

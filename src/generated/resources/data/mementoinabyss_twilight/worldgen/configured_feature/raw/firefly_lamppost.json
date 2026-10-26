@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "twilightforest:lampposts",
+  "config": {
+    "state": {
+      "Name": "twilightforest:firefly_jar",
+      "Properties": {
+        "waterlogged": "false"
+      }
+    }
+  }
+}
