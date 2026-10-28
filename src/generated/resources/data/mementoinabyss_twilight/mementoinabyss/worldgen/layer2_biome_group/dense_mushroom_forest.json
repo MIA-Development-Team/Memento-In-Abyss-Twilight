@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "companions": "mementoinabyss_twilight:mushroom_forest",
+  "primary": "mementoinabyss_twilight:dense_mushroom_forest",
+  "river": "mementoinabyss_twilight:stream",
+  "terrain_kinds": [
+    "woodland"
+  ]
+}

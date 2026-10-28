@@ -122,6 +122,38 @@ public final class TwilightLayerDataProvider implements DataProvider {
         saveTags(cache, saves, selectedBiomes.keySet());
         saveStructureSets(cache, saves);
         saveMapColors(cache, saves, selectedBiomes.keySet());
+        saveBiomeGroups(cache, saves);
+    }
+
+    private void saveBiomeGroups(CachedOutput cache, List<CompletableFuture<?>> saves) {
+        var paths =
+                packOutput.createPathProvider(
+                        PackOutput.Target.DATA_PACK, "mementoinabyss/worldgen/layer2_biome_group");
+        TwilightBiomeDefinitions.groups()
+                .forEach(
+                        group -> {
+                            var data = new JsonObject();
+                            data.addProperty("primary", MOD_ID + ":" + group.primary());
+                            data.addProperty("companions", MOD_ID + ":" + group.companion());
+                            group.transition()
+                                    .ifPresent(
+                                            transition -> {
+                                                data.addProperty(
+                                                        "transition", MOD_ID + ":" + transition);
+                                                data.addProperty(
+                                                        "transition_width",
+                                                        group.transitionWidth());
+                                            });
+                            var kinds = new JsonArray();
+                            kinds.add(group.terrainKind().getSerializedName());
+                            data.add("terrain_kinds", kinds);
+                            data.addProperty(
+                                    "river", MOD_ID + ":" + TwilightBiomeDefinitions.STREAM);
+                            withCondition(data);
+                            saves.add(
+                                    DataProvider.saveStable(
+                                            cache, data, paths.json(group.key().identifier())));
+                        });
     }
 
     private void saveMapColors(
@@ -441,6 +473,7 @@ public final class TwilightLayerDataProvider implements DataProvider {
         JsonArray kept = new JsonArray();
         int insertAt = -1;
         String heightmap = null;
+        boolean blanketing = false;
         for (JsonElement element : original) {
             if (!element.isJsonObject()) {
                 kept.add(element.deepCopy());
@@ -453,6 +486,15 @@ public final class TwilightLayerDataProvider implements DataProvider {
                 continue;
             }
             if (REMOVED_TF_MODIFIERS.contains(type)) continue;
+            if (type.equals("twilightforest:chunk_blanketing")) {
+                var copy = modifier.deepCopy();
+                copy.addProperty("type", MOD_ID + ":layer2_chunk_blanketing");
+                if (copy.has("biome_lock"))
+                    copy.add("biome_lock", copyBiomeLock(copy.get("biome_lock")));
+                kept.add(copy);
+                blanketing = true;
+                continue;
+            }
             if (scan
                     && (type.equals(SURFACE_MODIFIER)
                             || HEIGHT_MODIFIERS.contains(type)
@@ -465,7 +507,7 @@ public final class TwilightLayerDataProvider implements DataProvider {
             kept.add(modifier.deepCopy());
         }
 
-        if (!scan) return kept;
+        if (!scan || blanketing) return kept;
 
         // Keep the biome filter after the scan so it sees each candidate surface.
         JsonObject scanner = new JsonObject();
@@ -489,6 +531,21 @@ public final class TwilightLayerDataProvider implements DataProvider {
         result.add(scanner);
         for (int i = insertAt; i < kept.size(); i++) result.add(kept.get(i));
         return result;
+    }
+
+    private static JsonElement copyBiomeLock(JsonElement value) {
+        if (value.isJsonArray()) {
+            var copy = new JsonArray();
+            value.getAsJsonArray().forEach(v -> copy.add(copyBiomeLock(v)));
+            return copy;
+        }
+        String original = string(value);
+        if (original == null) return value.deepCopy();
+        boolean tag = original.startsWith("#");
+        var id = Identifier.tryParse(tag ? original.substring(1) : original);
+        return id != null && id.getNamespace().equals(TWILIGHT)
+                ? new JsonPrimitive((tag ? "#" : "") + publicCopyId(id))
+                : value.deepCopy();
     }
 
     private void saveTags(

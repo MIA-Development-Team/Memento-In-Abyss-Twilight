@@ -224,6 +224,21 @@
           "id": 31
         }
       }
+    },
+    "mementoinabyss_twilight:thornlands": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ],
+      "value": {
+        "brightness": 3,
+        "map_color": {
+          "color": 9402184,
+          "id": 13
+        }
+      }
     }
   }
 }

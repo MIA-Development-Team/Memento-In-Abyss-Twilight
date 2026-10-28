@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "feature": "mementoinabyss_twilight:thorns",
+  "placement": [
+    {
+      "type": "mementoinabyss_twilight:layer2_chunk_blanketing",
+      "biome_lock": "mementoinabyss_twilight:thornlands",
+      "heightmap": "OCEAN_FLOOR_WG",
+      "integrity": 0.7
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

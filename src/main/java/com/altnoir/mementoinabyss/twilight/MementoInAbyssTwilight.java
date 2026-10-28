@@ -3,6 +3,7 @@ package com.altnoir.mementoinabyss.twilight;
 import com.altnoir.mementoinabyss.api.worldgen.TheAbyssGeneratorSetupEvent;
 import com.altnoir.mementoinabyss.twilight.data.TwilightLayerDataProvider;
 import com.altnoir.mementoinabyss.twilight.worldgen.AbyssTwilight;
+import com.altnoir.mementoinabyss.twilight.worldgen.Layer2ChunkBlanketingPlacement;
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.PackType;
@@ -19,6 +20,7 @@ public final class MementoInAbyssTwilight {
 
     public MementoInAbyssTwilight(IEventBus modBus) {
         modBus.addListener(MementoInAbyssTwilight::gatherData);
+        Layer2ChunkBlanketingPlacement.register(modBus);
         NeoForge.EVENT_BUS.addListener(MementoInAbyssTwilight::setupGenerator);
     }
 

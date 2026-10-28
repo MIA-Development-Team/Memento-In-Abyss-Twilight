@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "companions": "mementoinabyss_twilight:snowy_forest",
+  "primary": "mementoinabyss_twilight:glacier",
+  "river": "mementoinabyss_twilight:stream",
+  "terrain_kinds": [
+    "highland"
+  ]
+}

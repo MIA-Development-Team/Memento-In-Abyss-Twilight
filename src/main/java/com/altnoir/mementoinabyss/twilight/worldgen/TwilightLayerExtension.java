@@ -1,5 +1,6 @@
 package com.altnoir.mementoinabyss.twilight.worldgen;
 
+import com.altnoir.mementoinabyss.api.worldgen.Layer2Biomes;
 import com.altnoir.mementoinabyss.infrastructure.worldgen.TheAbyssChunkGenerator;
 import com.altnoir.mementoinabyss.infrastructure.worldgen.TheAbyssChunkGenerator.GenerationContext;
 import com.altnoir.mementoinabyss.infrastructure.worldgen.biome.TheAbyssBiomeSource;
@@ -31,19 +32,16 @@ import twilightforest.world.components.structures.util.LandmarkStructure;
 final class TwilightLayerExtension implements TheAbyssChunkGenerator.Extension {
     private final ServerLevel level;
     private final TheAbyssBiomeSource source;
-    private final TwilightLayerBiomeResolver resolver;
     private final TwilightLayerProfile profile;
     private final SurfaceRules.RuleSource surface;
 
     TwilightLayerExtension(
             ServerLevel level,
             TheAbyssBiomeSource source,
-            TwilightLayerBiomeResolver resolver,
             TwilightLayerProfile profile,
             TheAbyssChunkGenerator generator) {
         this.level = level;
         this.source = source;
-        this.resolver = resolver;
         this.profile = profile;
         surface =
                 TwilightLayerSurfaces.withOriginal(
@@ -105,12 +103,18 @@ final class TwilightLayerExtension implements TheAbyssChunkGenerator.Extension {
             return new TheAbyssChunkGenerator.GenerationContext(generator, chunk);
         var pos = chunk.getPos();
         int x = pos.getMiddleBlockX(), z = pos.getMiddleBlockZ();
-        var region = profile.terrain().layout().sample(x, z);
-        var group = resolver.group(region);
+        var selection = Layer2Biomes.query(level, x, z);
+        var group = selection.group().flatMap(TwilightBiomeDefinitions::find).orElse(null);
+        if (group == null
+                || !(selection.zone().equals(Layer2Biomes.PRIMARY)
+                        || selection.zone().equals(Layer2Biomes.COMPANIONS))) return null;
         String id = structure.unwrapKey().orElseThrow().identifier().getPath();
         if (structure.value() instanceof LandmarkStructure
                 && !(structure.value() instanceof HollowHillStructure)) {
-            String expected = region.primary() ? group.structure() : group.satellite();
+            String expected =
+                    selection.zone().equals(Layer2Biomes.PRIMARY)
+                            ? group.structure()
+                            : group.satellite();
             if (!id.equals(expected)
                     && !(id.equals("giant_house") && "troll_cave".equals(expected))) return null;
         }

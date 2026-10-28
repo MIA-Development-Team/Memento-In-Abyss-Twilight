@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "companions": "mementoinabyss_twilight:highlands",
+  "primary": "mementoinabyss_twilight:final_plateau",
+  "river": "mementoinabyss_twilight:stream",
+  "terrain_kinds": [
+    "plateau"
+  ],
+  "transition": "mementoinabyss_twilight:thornlands",
+  "transition_width": 64
+}

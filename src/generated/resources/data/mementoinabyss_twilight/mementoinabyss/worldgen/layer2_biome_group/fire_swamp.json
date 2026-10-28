@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "companions": "mementoinabyss_twilight:swamp",
+  "primary": "mementoinabyss_twilight:fire_swamp",
+  "river": "mementoinabyss_twilight:stream",
+  "terrain_kinds": [
+    "wetland"
+  ]
+}

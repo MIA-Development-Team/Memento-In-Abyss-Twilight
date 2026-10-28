@@ -59,6 +59,10 @@
     {
       "id": "mementoinabyss_twilight:swamp",
       "required": false
+    },
+    {
+      "id": "mementoinabyss_twilight:thornlands",
+      "required": false
     }
   ]
 }
