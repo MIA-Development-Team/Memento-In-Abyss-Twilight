@@ -10,6 +10,7 @@
     "TwilightMagicMapMixin",
     "TwilightKnightStrongholdMixin",
     "TwilightCastleDungeonMixin",
+    "TwilightFinalCastleMixin",
     "TwilightTemplateGroundMixin",
     "TwilightMazeMapMixin"
   ],
